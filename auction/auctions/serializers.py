@@ -16,7 +16,7 @@ class AuctionSerialiser(serializers.HyperlinkedModelSerializer):
         model = Auction
         fields = ('product_id','number_of_bids','time_starting','time_ending')
         
-class Watchlist(serializers.HyperlinkedModelSerializer):
+class WatchlistSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Watchlist
         fields = ('user_id','auction_id')
